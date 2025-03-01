@@ -13,28 +13,85 @@ body {
     color: #222;
 }
 
+/* ✅ Hero Section - Fixed Background */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), 
-                url('jain-temple.jpg') no-repeat center center/cover;
+    background: url('jain-temple.jpg') no-repeat center center/cover; /* ✅ Ensures full coverage */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
+    overflow: hidden; /* ✅ Prevents unexpected stretching */
 }
 
+/* ✅ Dark overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* ✅ Adjust for better contrast */
+    z-index: 1;
+}
 
+/* ✅ Ensures text stays above the faded background */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+}
+
+/* ✅ Title Styling */
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
     animation: fadeInUp 1.5s ease-in-out;
 }
 
+/* ✅ Subtitle Styling */
 .hero-content p {
     font-size: 1.5rem;
     animation: fadeInUp 2s ease-in-out;
 }
+
+/* ✅ Button Styling */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: darkgoldenrod;
+}
+
+/* ✅ Mobile Responsive Hero */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
 
 .btn {
     display: inline-block;
