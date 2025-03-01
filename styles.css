@@ -131,22 +131,30 @@ footer {
     }
 }
 
-/* Navbar */
+/* ✅ Navbar - Transparent & Fixed */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Space between logo and menu */
+    justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    background: rgba(255, 255, 255, 0.95);
+    height: 60px;  /* ✅ Fixed height */
+    background: rgba(255, 255, 255, 0.2); /* ✅ Transparent but slightly visible */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    backdrop-filter: blur(10px); /* ✅ Adds blur effect for readability */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
 }
 
-/* Logo */
+/* ✅ Make Navbar More Visible on Scroll */
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9); /* ✅ Becomes solid white on scroll */
+}
+
+/* ✅ Logo Section */
 .navbar .logo {
     display: flex;
     align-items: center;
@@ -155,34 +163,36 @@ footer {
     color: black;
 }
 
-/* Logo Image */
+/* ✅ Logo Image */
 .navbar .logo img {
-    width: 45px;
-    height: 45px;
-    margin-right: 12px;
+    width: 40px;  /* ✅ Slightly smaller */
+    height: 40px;
+    margin-right: 10px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
-/* Navigation Links */
+/* ✅ Navigation Links */
 .nav-links {
     list-style: none;
-    display: flex;  /* ✅ Fix alignment issue */
+    display: flex;  /* ✅ Align links horizontally */
     gap: 25px; /* ✅ Space between links */
     padding: 0;
     margin: 0;
 }
 
+/* ✅ Navigation Link Styling */
 .nav-links li {
     display: inline-block;
 }
 
 .nav-links a {
     text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black; /* ✅ Ensures visibility */
     transition: color 0.3s ease-in-out;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 5px;
 }
 
@@ -191,11 +201,17 @@ footer {
     background: goldenrod;
 }
 
-/* Mobile Navigation */
+/* ✅ Fix Content Overlap with Navbar */
+.hero {
+    margin-top: 80px; /* ✅ Pushes Hero Section down */
+}
+
+/* ✅ Mobile Responsive Navbar */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         padding: 15px 5%;
+        height: auto;
     }
 
     .nav-links {
