@@ -58,3 +58,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// ✅ Make Philosophy Section Items Fade in on Scroll
+document.addEventListener("DOMContentLoaded", function() {
+    let elements = document.querySelectorAll(".fade-in");
+
+    function checkScroll() {
+        let scrollY = window.scrollY;
+        elements.forEach(el => {
+            let offset = el.offsetTop;
+            if (scrollY + window.innerHeight - 100 > offset) {
+                el.classList.add("visible");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll();
+});
+
