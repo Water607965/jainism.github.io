@@ -1,0 +1,131 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('images/jain-temple.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: darkgoldenrod;
+}
+
+/* Content Section */
+.content-section {
+    padding: 80px 10%;
+    text-align: center;
+    background: white;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.principles {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.principle {
+    width: 300px;
+    text-align: center;
+}
+
+.principle img {
+    width: 100px;
+    transition: transform 0.5s;
+}
+
+.principle img:hover {
+    transform: scale(1.2);
+}
+
+/* Sacred Symbols */
+.sacred-section {
+    text-align: center;
+    padding: 50px;
+    background: url('images/jain-symbols.jpg') no-repeat center/cover;
+    color: white;
+}
+
+.symbols img {
+    width: 150px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.symbols img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Parallax Effect */
+.parallax {
+    background: url('images/jain-parallax.jpg') no-repeat center/cover fixed;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
