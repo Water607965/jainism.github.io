@@ -89,7 +89,7 @@ body {
 .sacred-section {
     text-align: center;
     padding: 50px;
-    background: url('images/jain-symbols.jpg') no-repeat center/cover;
+    background: url('jain-symbols.jpg') no-repeat center/cover;
     color: white;
 }
 
@@ -105,7 +105,7 @@ body {
 
 /* Parallax Effect */
 .parallax {
-    background: url('images/jain-parallax.jpg') no-repeat center/cover fixed;
+    background: url('jain-parallax.jpg') no-repeat center/cover fixed;
     height: 300px;
     display: flex;
     justify-content: center;
