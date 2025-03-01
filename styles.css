@@ -130,49 +130,10 @@ footer {
         transform: translateY(30px);
     }
 
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #f4f4f4;
-    color: #222;
-    overflow-x: hidden;
-}
-
-/* Loading Screen */
-.loading-screen {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 9999;
-}
-
-.spinning-swastika {
-    width: 100px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between logo and menu */
     align-items: center;
     padding: 15px 10%;
     background: rgba(255, 255, 255, 0.9);
@@ -183,6 +144,7 @@ body {
     transition: background 0.3s;
 }
 
+/* Logo */
 .navbar .logo {
     display: flex;
     align-items: center;
@@ -190,13 +152,23 @@ body {
     font-weight: bold;
 }
 
+/* Logo Image */
+.navbar .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 20px; /* Space between links */
 }
 
 .nav-links li {
-    margin: 0 15px;
+    display: inline-block;
 }
 
 .nav-links a {
@@ -204,32 +176,28 @@ body {
     font-size: 1.2rem;
     color: black;
     transition: color 0.3s;
+    font-weight: 600;
 }
 
 .nav-links a:hover {
     color: goldenrod;
 }
 
-/* Parallax */
-.parallax {
-    background: url('images/jain-parallax.jpg') no-repeat center/cover fixed;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
+/* Mobile Navigation Fix */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        display: block;
+    }
 }
 
-/* Animations */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s, transform 1s;
-}
-
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
