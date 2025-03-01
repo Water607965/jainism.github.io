@@ -13,17 +13,17 @@ body {
     color: #222;
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
-    background: url('jain-temple.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), 
+                url('jain-temple.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    position: relative;
 }
+
 
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
