@@ -2003,3 +2003,103 @@ footer {
     transform: translateY(0);
 }
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9 - Jain Festivals and Rituals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <!-- ✅ Standard Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="truejainism.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="truejainism.png">
+    <link rel="apple-touch-icon" href="truejainism.png">
+</head>
+<body>
+
+    <!-- ✅ Header Navigation -->
+    <header class="chapter-header">
+        <a href="index.html" class="back-btn">← Back to Chapters</a>
+        <h1>Chapter 9: Jain Festivals and Rituals</h1>
+    </header>
+
+    <!-- ✅ Hero Section with Jain Temple Background -->
+    <section class="chapter-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>"Festivals are a path to purification." - Jain Philosophy</h2>
+            <p>Jain festivals are a time for reflection, fasting, and deepening spiritual practice.</p>
+        </div>
+    </section>
+
+    <!-- ✅ Main Chapter Content -->
+    <section class="chapter-content">
+
+        <!-- ✅ Introduction to Jain Festivals -->
+        <div class="chapter-section fade-in">
+            <h2>The Importance of Festivals in Jainism</h2>
+            <p>
+                Jain festivals are not just celebrations; they are **spiritual observances** focused on **self-discipline, purification, and devotion**.  
+                Many involve **fasting, prayers, and recitation of scriptures** to promote **inner growth**.
+            </p>
+        </div>
+
+        <!-- ✅ Major Jain Festivals -->
+        <div class="chapter-section fade-in">
+            <h2>Major Jain Festivals</h2>
+            <p>Jainism has several important festivals that emphasize **non-violence, fasting, and self-purification**:</p>
+            <div class="festival-grid">
+                <div class="festival-card">
+                    <img src="paryushana.png" alt="Paryushana">
+                    <h3>Paryushana</h3>
+                    <p>The most sacred Jain festival, a time of **fasting, forgiveness, and introspection**.</p>
+                </div>
+                <div class="festival-card">
+                    <img src="mahavir-jayanti.png" alt="Mahavir Jayanti">
+                    <h3>Mahavir Jayanti</h3>
+                    <p>Celebrates the birth of <b>Lord Mahavira</b> with prayers and processions.</p>
+                </div>
+                <div class="festival-card">
+                    <img src="diwali-jain.png" alt="Jain Diwali">
+                    <h3>Jain Diwali</h3>
+                    <p>Marks the **nirvana (liberation)** of Lord Mahavira.</p>
+                </div>
+                <div class="festival-card">
+                    <img src="kartik-purnima.png" alt="Kartik Purnima">
+                    <h3>Kartik Purnima</h3>
+                    <p>Honors Jain pilgrimage traditions and spiritual renewal.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ✅ Rituals in Jain Worship -->
+        <div class="chapter-section fade-in">
+            <h2>Key Rituals in Jain Worship</h2>
+            <p>
+                Jain rituals are focused on **purification, meditation, and devotion**.  
+                Some of the most important practices include:
+            </p>
+            <ul class="key-points">
+                <li><b>Pratikraman:</b> A ritual of **self-reflection and forgiveness**, performed daily or during festivals.</li>
+                <li><b>Abhisheka:</b> The **ceremonial bathing** of Tirthankara idols.</li>
+                <li><b>Samayika:</b> Practicing **equanimity** through meditation.</li>
+                <li><b>Snatra Puja:</b> A ritual offering **gratitude** to Jain saints.</li>
+            </ul>
+        </div>
+
+        <!-- ✅ Fasting and Spiritual Cleansing -->
+        <div class="chapter-section fade-in">
+            <h2>The Role of Fasting in Festivals</h2>
+            <p>
+                During major festivals like **Paryushana**, many Jains undertake strict **fasting (Upvas)**  
+                to purify the soul and detach from material desires.
+            </p>
+        </div>
+
+    </section>
+
+</body>
+</html>
+
