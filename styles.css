@@ -1309,3 +1309,190 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ✅ Hero Section - Fixed Background */
+.chapter-hero {
+    height: 70vh;
+    background: url('mahavira-temple.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* ✅ Dark Overlay for Readability */
+.chapter-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* ✅ Ensures Text Stays Above the Background */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+}
+
+/* ✅ Title Styling */
+.hero-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* ✅ Subtitle Styling */
+.hero-content p {
+    font-size: 1.5rem;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* ✅ Main Chapter Content */
+.chapter-content {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+/* ✅ Chapter Sections */
+.chapter-section {
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.chapter-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.chapter-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* ✅ Key Points List */
+.key-points {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.key-points li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* ✅ Tirthankara Section */
+.tirthankara-section {
+    text-align: center;
+    margin: 60px auto;
+}
+
+/* ✅ Tirthankara Grid */
+.tirthankara-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ✅ Tirthankara Card */
+.tirthankara-card {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 260px;
+    min-height: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ✅ Tirthankara Image */
+.tirthankara-card img {
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* ✅ Core Beliefs Section */
+#core-beliefs {
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+/* ✅ Core Beliefs Grid */
+.beliefs-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/* ✅ Core Beliefs Card */
+.belief-card {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 280px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ✅ Core Beliefs Image */
+.belief-card img {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* ✅ Ensure Even Alignment */
+.belief-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* ✅ Hover Effect */
+.belief-card:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s, transform 1s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
