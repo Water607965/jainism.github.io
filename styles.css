@@ -16,17 +16,17 @@ body {
 /* ✅ Hero Section - Fixed Background */
 .hero {
     height: 100vh;
-    background: url('jain-temple.jpg') no-repeat center center/cover; /* ✅ Ensures full coverage */
+    background: url('jain-temple.jpg') no-repeat center center/cover; 
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    overflow: hidden; /* ✅ Prevents unexpected stretching */
+    overflow: hidden;
 }
 
-/* ✅ Dark overlay for readability */
+/* ✅ Dark Overlay for Readability */
 .hero::before {
     content: "";
     position: absolute;
@@ -34,11 +34,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* ✅ Adjust for better contrast */
+    background: rgba(0, 0, 0, 0.6); /* Increased contrast */
     z-index: 1;
 }
 
-/* ✅ Ensures text stays above the faded background */
+/* ✅ Ensures Text Stays Above the Background */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -49,6 +49,7 @@ body {
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
+    font-weight: bold;
     animation: fadeInUp 1.5s ease-in-out;
 }
 
@@ -76,279 +77,98 @@ body {
     background: darkgoldenrod;
 }
 
-/* ✅ Mobile Responsive Hero */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-
-    .btn {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-}
-
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: gold;
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: darkgoldenrod;
-}
-
-/* Content Section */
-.content-section {
-    padding: 80px 10%;
+/* ✅ Tirthankara Section */
+.tirthankara-section {
     text-align: center;
-    background: white;
+    margin: 60px auto;
 }
 
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.principles {
+/* ✅ Tirthankara Grid */
+.tirthankara-grid {
     display: flex;
+    gap: 30px;
     justify-content: center;
-    gap: 50px;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
 }
 
-.principle {
-    width: 300px;
-    text-align: center;
-}
-
-.principle img {
-    width: 100px;
-    transition: transform 0.5s;
-}
-
-.principle img:hover {
-    transform: scale(1.2);
-}
-
-/* Sacred Symbols */
-.sacred-section {
-    text-align: center;
-    padding: 50px;
-    background: url('jain-symbols.jpg') no-repeat center/cover;
-    color: white;
-}
-
-.symbols img {
-    width: 150px;
-    margin: 10px;
-    transition: transform 0.3s;
-}
-
-.symbols img:hover {
-    transform: rotate(10deg) scale(1.1);
-}
-
-/* Parallax Effect */
-.parallax {
-    background: url('jain-parallax.jpg') no-repeat center/cover fixed;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-}
-
-/* Footer */
-footer {
-    text-align: center;
+/* ✅ Tirthankara Card */
+.tirthankara-card {
+    background: #f9f9f9;
     padding: 20px;
-    background: #222;
-    color: white;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-}
-
-/* ✅ Navbar - Transparent & Fixed */
-.navbar {
+    text-align: center;
+    border-radius: 8px;
+    width: 260px;
+    min-height: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10%;
-    height: 60px;  /* ✅ Fixed height */
-    background: rgba(255, 255, 255, 0.2); /* ✅ Transparent but slightly visible */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px); /* ✅ Adds blur effect for readability */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease-in-out;
 }
 
-/* ✅ Make Navbar More Visible on Scroll */
-.navbar.scrolled {
-    background: rgba(255, 255, 255, 0.9); /* ✅ Becomes solid white on scroll */
+/* ✅ Tirthankara Image */
+.tirthankara-card img {
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
-/* ✅ Logo Section */
-.navbar .logo {
+/* ✅ Core Beliefs Section */
+#core-beliefs {
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+/* ✅ Core Beliefs Grid */
+.beliefs-grid {
     display: flex;
-    align-items: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: black;
-}
-
-/* ✅ Logo Image */
-.navbar .logo img {
-    width: 40px;  /* ✅ Slightly smaller */
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* ✅ Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;  /* ✅ Align links horizontally */
-    gap: 25px; /* ✅ Space between links */
-    padding: 0;
-    margin: 0;
-}
-
-/* ✅ Navigation Link Styling */
-.nav-links li {
-    display: inline-block;
-}
-
-.nav-links a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: black; /* ✅ Ensures visibility */
-    transition: color 0.3s ease-in-out;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-.nav-links a:hover {
-    color: white;
-    background: goldenrod;
-}
-
-/* ✅ Fix Content Overlap with Navbar */
-.hero {
-    margin-top: 80px; /* ✅ Pushes Hero Section down */
-}
-
-/* ✅ Mobile Responsive Navbar */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px 5%;
-        height: auto;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .nav-links a {
-        display: block;
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-/* Philosophy Section */
-.content-section {
-    padding: 80px 10%;
-    text-align: center;
-    background: white;
-}
-
-.section-title {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #222;
-}
-
-.section-intro {
-    font-size: 1.4rem;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-/* Philosophy Container */
-.philosophy-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    gap: 30px;
     justify-content: center;
-    align-items: start;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/* ✅ Core Beliefs Card */
+.belief-card {
+    background: #fff;
+    padding: 20px;
     text-align: center;
-}
-
-/* Individual Philosophy Item */
-.philosophy-item {
-    padding: 25px;
-    background: #f9f9f9;
     border-radius: 10px;
+    width: 280px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.philosophy-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* Philosophy Images */
-.philosophy-item img {
-    width: 80px;
+/* ✅ Core Beliefs Image */
+.belief-card img {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
     margin-bottom: 15px;
 }
 
-/* Key Points List */
-.key-points {
-    text-align: left;
-    margin-top: 10px;
-    padding-left: 20px;
+/* ✅ Ensure Even Alignment */
+.belief-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-.key-points li {
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.6;
+/* ✅ Hover Effect */
+.belief-card:hover {
+    transform: scale(1.05);
 }
 
-/* Fade-in Animation */
+/* ✅ Fade-in Animation */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -359,6 +179,7 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 /* ✅ Chapter Header */
 .chapter-header {
