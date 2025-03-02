@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jainism</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <!-- ✅ Standard Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="truejainism.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="truejainism.png">
+    <link rel="apple-touch-icon" href="truejainism.png">
+</head>
+<body>
+
+    <!-- ✅ Header Navigation -->
+    <header class="chapter-header">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- ✅ Hero Section with Jain Temple Background -->
+    <section class="chapter-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Have Questions? Contact Us</h2>
+            <p>We’d love to hear from you. Reach out with any inquiries or feedback.</p>
+        </div>
+    </section>
+
+    <!-- ✅ Contact Form Section -->
+    <section class="contact-content">
+        <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form action="https://formspree.io/f/xayrkdlb" method="POST" id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <p class="email-info">
+                Or email us directly at: 
+                <a href="mailto:water607965@gmail.com">water607965@gmail.com</a>
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
