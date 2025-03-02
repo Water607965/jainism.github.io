@@ -112,4 +112,29 @@ window.addEventListener("pageshow", function() {
     document.body.style.opacity = 1;
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", async function(event) {
+        event.preventDefault(); // Prevent page reload
+
+        const formData = new FormData(form);
+
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            document.getElementById("success-message").style.display = "block";
+            form.reset(); // Clear the form after successful submission
+        } else {
+            alert("❌ Error sending message. Please try again.");
+        }
+    });
+});
+
 
