@@ -2295,4 +2295,78 @@ footer {
     transform: translateY(0);
 }
 
+/* ✅ Contact Form Section */
+.contact-content {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+/* ✅ Contact Form Container */
+.contact-form-container {
+    max-width: 600px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ✅ Input & Textarea Styles */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* ✅ Button Styling */
+.btn {
+    padding: 12px;
+    background: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: darkgoldenrod;
+    color: white;
+}
+
+/* ✅ Email Info */
+.email-info {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.email-info a {
+    color: goldenrod;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.email-info a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-container {
+        width: 90%;
+    }
+}
+
+
 
