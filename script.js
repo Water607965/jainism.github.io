@@ -137,4 +137,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+/* === Jaipur Foot Banner Close Logic ============================== */
+document.addEventListener("DOMContentLoaded", () => {
+  const closeBtn = document.getElementById("closeJaipurBanner");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      const banner = document.getElementById("jaipur-foot-banner");
+      if (banner) banner.style.display = "none";
+    });
+  }
+});
+/* === End Jaipur Foot Banner Logic ================================= */
 
